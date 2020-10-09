@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Final Exam Part 2 - Web Application for COVID-19</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark" style="position:fixed; width:100%; z-index:1;">
+    <a class="navbar-brand" style="color:white; font-weight:bolder;">CNU</a>
+    <form class="form-inline" style="margin-left:10%;">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <a href="#"><i class="fas fa-search fa-lg" style="color:white;"></i></a>
+    </form>
+
+    <div class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-sign-in-alt fa-lg" style="color:white;"></i></a>
+      <div class="dropdown-menu" style="text-align:right;">
+        <a class="dropdown-item" href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Finals/exam/cnu.html/members-page.html">Members Page</a>
+        <a class="dropdown-item" href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Finals/exam/membership-registration.html" target="_blank">Membership Registration Page</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Finals/exam/administrator-login.html" target="_blank">Administrator Log-in Page</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Sign In</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <b style="font-size:62px; color:white;">CORONAVIRUS NEWS & UPDATES</b>
+  </header>
+
+  <div class="container">
+    <ul class="nav nav-pills nav-fill d-flex justify-content-around">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+        <div class="dropdown-menu" style="width:100%; text-align:center;">
+          <a class="dropdown-item" href="#">Purpose of the Site</a>
+          <a class="dropdown-item" href="#">Background</a>
+          <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">People Behind</a>
+          <div class="dropdown-menu" style="width:100%; text-align:center;">
+            <a class="dropdown-item" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact">Contact Us</a>
+            <a class="dropdown-item" id="pills-porfolio-tab" data-toggle="pill" href="#pills-porfolio" role="tab" aria-controls="pills-porfolio">My Portfolio</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Coronavirus</a>
+        <div class="dropdown-menu" style="width:100%; text-align:center;">
+          <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Coronavirus Background</a>
+          <div class="dropdown-menu" style="width:100%; text-align:center;">
+            <a class="dropdown-item" href="#">History</a>
+            <a class="dropdown-item" href="#">Symptoms</a>
+            <a class="dropdown-item" href="#">Prevention</a>
+          </div>
+          <a class="dropdown-item" href="#">News</a>
+          <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Virus Maps & Cases</a>
+          <div class="dropdown-menu" style="width:100%; text-align:center;">
+            <a class="dropdown-item" href="#">Updates</a>
+            <a class="dropdown-item" href="#">Situational Reports</a>
+          </div>
+          <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Articles</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+        <div class="dropdown-menu" style="width:100%; text-align:center;">
+          <a class="dropdown-item" href="#">Donations</a>
+          <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Forums</a>
+          <div class="dropdown-menu" style="width:100%; text-align:center;">
+            <a class="dropdown-item" href="#">Dashboard</a>
+            <a class="dropdown-item" href="#">Send Qs</a>
+            <a class="dropdown-item" href="#">FAQs</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+
+      <!-- homepage -->
+
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+        <div class="container-fluid">
+          <center>
+            <div class="card-columns">
+
+              <div class="card bg-primary text-white text-center p-3">
+                <h5 class="card-header">Coronavirus Symptoms</h5>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <small>
+                      <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.
+                        Most common symptoms:
+                        <ul>
+                          <li>fever</li>
+                          <li>dry cough</li>
+                          <li>tiredness</li>
+                        </ul>
+                        Less common symptoms:
+                        <ul>
+                          <li>aches and pains</li>
+                          <li>sore throat</li>
+                          <li>diarrhoea</li>
+                          <li>conjunctivitis</li>
+                          <li>headache</li>
+                          <li>loss of taste or smell</li>
+                        </ul><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms" target="_blank" style="color:red;">Read More</a>
+                        <p>From World Health Oorganization News Report</p>
+                    </small>
+                  </blockquote>
+                  <div class="card-footer text-muted">17 April 2020</div>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">What you need to know</h5>
+                  <p class="card-text">
+                    <ul>
+                      <li>The world has recorded its highest number of daily Covid-19 cases since the pandemic began, fueled by a second wave in Europe.</li>
+                      <li>President Trump has been cleared by his doctor to resume public engagements, but there are still unanswered questions about his health.</li>
+                      <li>The World Food Programme won the 2020 Nobel Peace Prize as the world grapples with a pandemic-induced food crisis.</li>
+                      <li>China has signed onto the WHO's COVAX initiative, which aims to provide worldwide access to effective Covid-19 vaccines.</li>
+                    </ul>
+                  </p>
+                  <p class="card-text"><small class="text-muted">From CNN World</small></p>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card-img-top" src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/261344ee-22b1-4c3e-bc7a-a4bd1aea0c8a.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">FDA emergency authorizations should be “guided by science,” medical societies urged </h5>
+                  <p class="card-text text-justify">A group of American medical societies urged the US Food and Drug Administration to use “established scientific standards” in granting any emergency use authorizations or approval of Covid-19 therapies or vaccines, according to a statement issued this week. <a href="https://edition.cnn.com/world/live-news/coronavirus-pandemic-10-09-20-intl/h_22f5efed4e4af224c25546dfb4c92b2e" target="_blank">Read More</a></p>
+                  <p class="card-text"><small class="text-muted">From CNN Health’s Shelby Lin Erdman</small></p>
+                  <div class="card-footer text-muted">10 Oct 2020</div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card-img-top" src="https://www.who.int/images/default-source/wpro/countries/philippines/emergencies/covid-19/viber-image-2020-04-22-20-34-47.tmb-1024v.jpg?sfvrsn=75862de6_1" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">100 days of COVID-19 in the Philippines: How WHO supported the Philippine response</h5>
+                  <p class="card-text text-justify">Exactly 100 days have passed since the first confirmed COVID-19 case was announced in the Philippines on 30 January 2020, with a 38-year old female from Wuhan testing positive for the novel coronavirus. On the same day, on the other side of the world at the WHO headquarters in Geneva, WHO activated the highest level of alert by declaring COVID-19 as a public health emergency of international concern. <a href="https://www.who.int/philippines/news/feature-stories/detail/100-days-of-covid-19-in-the-philippines-how-who-supported-the-philippine-response" target="_blank">Read More</a></p>
+                  <p class="card-text"><small class="text-muted">From World Health Oorganization News Report</small></p>
+                  <div class="card-footer text-muted">9 May 2020</div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card-img-top" src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/ae83d3fc-b0da-4408-a1c2-d8780e50ce0c.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Russia reports record daily increase in coronavirus cases since the beginning of the pandemic</h5>
+                  <p class="card-text text-justify">Russia reported 12,126 new cases of Covid-19 on Friday, the highest daily increase recorded since the beginning of the pandemic, according to the data from the country's coronavirus response headquarters.
+                    <blockquote>"Over the past 24 hours there have been 12,126 confirmed cases of new coronavirus infection Covid-19 in 85 regions, including 3,272 (27%) active cases without clinical manifestations,” the statement from health officials said.</blockquote>
+                    In total, Russia has reported 1,272,238 coronavirus cases as of October 9.
+
+                    Russia’s deputy prime minister Tatyana Golikova has previously said that May 11 was the peak of the pandemic, with 11,656 officially reported cases on that day.
+                  </p>
+                  <p class="card-text"><small class="text-muted">From CNN’s Mary Ilyushina in Moscow</small></p>
+                  <div class="card-footer text-muted">10 Oct 2020</div>
+                </div>
+              </div>
+
+              <blockquote class="card twitter-tweet">
+                <p lang="en" dir="ltr">The seven-day average for daily coronavirus cases grew by more than 5% in 38 states yesterday. 9 states hit record-high average hospitalizations yesterday.</p>&mdash; Dawn Kopecki (@Dawn_Kopecki) <a href="https://twitter.com/Dawn_Kopecki/status/1314551909936660481?ref_src=twsrc%5Etfw">October 9, 2020</a>
+              </blockquote>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+              <div class="card">
+                <blockquote class="blockquote mb-0">
+                  <video width="100%" controls>
+                    <source src="https://youtu.be/Sg6eO1ab0Xk" type="video/mp4">Your browser does not support the video tag.
+                  </video>
+                  <div class="card-body">
+                    <h5 class="card-title">New COVID-19 cases around the world (as of Oct. 8, 2020)</h5>
+                    <small class="text-muted">From GMA News Online</small>
+                    <div class="card-footer text-muted">9 Oct 2020</div>
+                  </div>
+              </div>
+
+              <div class="card">
+                <img class="card-img-top" src="https://images.gmanews.tv/webpics/2020/05/2020-05-18T152933Z_32296381_RC23RG9OM8DB_RTRMADP_3_HEALTH-CORONAVIRUS-FRANCE-TESTS_2020_05_21_02_04_42.JPG">
+                <div class="card-body">
+                  <h5 class="card-title">Filipinos abroad with COVID-19 now at 10,864 — DFA</h5>
+                  <p class="card-text text-justify">The number of Filipinos abroad who have tested positive for the coronavirus disease 2019 (COVID-19) rose to 10,864 on Friday after the Department of Foreign Affairs (DFA) reported three new infections.
+
+                    Meanwhile, four more Filipino nationals have recovered from the illness, bringing the total tally to 6,919, while the death toll remained at 800. <a href="https://www.gmanetwork.com/news/pinoyabroad/news/759194/filipinos-abroad-with-covid-19-now-at-10-864-dfa/story/" targer="_blank">Read More</a></p>
+                  <p class="card-text"><small class="text-muted">From GMA News Online</small></p>
+                  <div class="card-footer text-muted">9 Oct 2020</div>
+                </div>
+              </div>
+
+              <blockquote class="twitter-tweet card">
+                <p lang="en" dir="ltr">NEW: Coronavirus infections in England are rising by an estimated 17,200 a day, up 105% from last week or 437% from last month - ONS</p>&mdash; BNO Newsroom (@BNODesk) <a href="https://twitter.com/BNODesk/status/1314541470838292480?ref_src=twsrc%5Etfw">October 9, 2020</a>
+              </blockquote>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+              <div class="card">
+                <img class="card-img-top" src="https://sa.kapamilya.com/absnews/abscbnnews/media/2020/news/10/09/20200806-covid19-vaccine-gamaleya-afp.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">DOH: Russia looking for local research group to jointly conduct COVID-19 vaccine clinical trial in PH</h5>
+                  <p class="card-text text-justify">MANILA — To organize a COVID-19 vaccine clinical trial in the Philippines, Russia’s Gamaleya Research Institute must now find a local research group, the Department of Health said Friday. <br>
+
+                    Health Undersecretary Maria Rosario Vergeire said finding a local contract research institute to jointly conduct the clinical trial is part of the regulatory requirement of the... <a href="https://news.abs-cbn.com/news/10/09/20/doh-russia-looking-for-local-research-group-to-jointly-conduct-covid-19-vaccine-clinical-trial-in-ph" targer="_blank">Read More</a></p>
+                  <p class="card-text"><small class="text-muted">From Kristine Sabillo, ABS-CBN News</small></p>
+                  <div class="card-footer text-muted">9 Oct 2020</div>
+                </div>
+              </div>
+
+            </div>
+          </center>
+        </div>
+      </div>
+
+      <!-- porfolio -->
+
+      <div class="tab-pane fade" id="pills-porfolio" role="tabpanel" aria-labelledby="pills-porfolio-tab">
+        <div class="container-fluid">
+          <center>
+            <h1><span id="bubble">Vannirrie Sarmiento</span></h1>
+            <p>Allow me to introduce myself! I am a designer and a student-in-training. I am a 19 years old, female, IT student at University of Immaculate Conception. I like designing web pages and contributing to the creativity. I am still a novice to the ways of web developmen but here, you will see the collection of my projects throughout my Web Development class. I hope you enjoy your stay!</p>
+            <hr>
+
+            <div class="content">
+              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/tribute.png" class="img">
+              <div class="overlay">
+                <div class="overlaytext">
+                  <b>Tribute Page</b><br>
+                  <blockquote>This is one of my latest piece. It is to commemorate my idol, Zendaya. I started with a simple HTML code that complements the achievements and beauty of the person I admire. My vision was to use light and neutral colors, such as linen, peach, white, and black. I used CSS to implement those.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/act47/tribute.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/invoice.png" class="img">
+              <div class="overlay">
+                <div class="overlaytext">
+                  <b>Invoice / Receipt Page</b><br>
+                  <blockquote>We were tasked to find a receipt online and imitate its attributes but make it as a functional website. Webpage #1 is all about the web view of the receipt only. While, Webpage #2 contains the HTML forms. I only used input types that are only applicable, like textfield, numberfield, and a date input.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2a/receipt_web_view.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE #1</a>&nbsp;<a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2a/receipt_input_form.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE #2</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/google.png" class="img">
+              <div class="overlay">
+                <div class="overlaytext">
+                  <b>Copy of Google Main Page</b><br>
+                  <blockquote>The creation of this webpage was all about my ability to copy Google's web design in my own little ways. In order to achieve this output, I keenly observed Google. I made sure I had atleast the right shades of the colors used. It was very time consuming but it was good practice to sharpen my skills.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/act46/google.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/vmg.png" class="img">
+              <div class="overlay">
+                <div class="overlaytext">
+                  <b>UIC Vison, Mision, & Goals</b><br>
+                  <blockquote>When I created this, my classmates & I were still learning about the fundamentals of web development. Thus, the site will be basic & simple. We were tasked to attach a video & audio of ourselves reciting to UIC's VMG. I used basic HTML to attach the medias to the site. </blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/vmg.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/testingcss.png" class="img">
+              <div class="overlay">
+                <div class="overlaytext">
+                  <b>Testing CSS Page</b><br>
+                  <blockquote>Disclaimer, the contents and design is not originally visualized and created by me. However, I followed certain steps & procedures to arrive in this web page. It helped me learn discipline and protocols, thus making me a better web developer. So, I showcase it here despite having no claim.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/act45/testingcss.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/masterdetail.png" class="img">
+              <div class="overlay">
+                <div class="overlaytext">
+                  <b>Masterdetail Page</b><br>
+                  <blockquote>This webpage was the hardest one for me, because each page consists of the past activities we've already made. It was stored in a masterdetail platform. It was very time consuming. Still, I managed to apply CSS styling codes to make it more appealing. Nonetheless, it helped me with my understanding.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/masterdetail.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/calendar.png" class="img">
+              <div class="overlay">
+                <div class="overlaytext">
+                  <b>Birth Month Page</b><br>
+                  <blockquote>This webpage was one of the first tasks my class was assigned to do. This is just a simple calendar of my birth month. I just added a repeating background and added complimentary colors, such as the hues of nature. It compliments the theme of the month of May.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/calendarwithcss.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/markup.png" class="img">
+              <div class="overlay">
+                <div class="overlaytext">
+                  <b>Markup Page</b><br>
+                  <blockquote>This webpage was another one of the first tasks my class was assigned to do. It is just a basic layout of a poem with markins on it. I used the em and strong tag to emphasize the lines that needs bold and italicized markings on it to create a more indepth feeling of the poem. This thought me the use of tags.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/markup.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
+                </div>
+              </div>
+            </div>
+          </center>
+        </div>
+      </div>
+
+      <!-- contact page -->
+
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div class="container-fluid">
+          <center>
+            <h1>Contact Us</h1><br></br>
+            <table class="contactpage">
+              <tr>
+                <td><input type="text" id="myInput" class="form-control form-control-lg" placeholder="Enter your name"></td>
+                <td>Feel free to get in touch with us. We are<br>always open to a discussuon!
+                </td>
+              </tr>
+              <tr>
+                <td><input type="text" id="myInput" class="form-control form-control-lg" placeholder="Enter your email address"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><textarea class="form-control form-control-lg" id="myInput" id="exampleFormControlTextarea1" placeholder="Enter your message here" rows="6"></textarea></td>
+                <td><i class="fas fa-envelope fa-lg"></i>
+                  <p class="d-flex align-items-center">cnu.info@mail.com</p><i class="fas fa-phone fa-lg"></i>
+                  <p>Call Us</br>(08) 345 652</p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+            </table>
+          </center>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
