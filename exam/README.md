@@ -11,7 +11,7 @@ Link to your Sitemap, Wireframe, and Video Pitch:
 * [__Video Pitch__](https://drive.google.com/file/d/1xgpNj_Lc9AD2l4LEElP9qQ12RCIWbnk9/view?usp=drivesdk)
 
 What are the web tools you used to create your web app?
-* __I have mostly used the Bootstrap CDN because of it's integrated components. It helped me achieve the professional theme of my website.__
+* __I have mostly used the Bootstrap CDN because of it's integrated components. It helped me achieve the professional theme of my website but for editing I used codepen.__
 
 Discuss what you learned in this (a) COVID-19 web app project and (b) Web Development 1 Course/Subject. 
 * __First, I learned that the COVID-19 disease is a serious matter and it affects not only the population but the government, economy, and mental health of individuals. Web development allowed me to make my vision into a reality. Learning the fundamentals such as HTML, CSS, and Javascript allowed me to be a striving web developer. By creating a website, I have grasp the idea of stepping up to make an action by helping others. I hope by establishing this website could serve it's purpose for the users and not only because we are required to do so.__
