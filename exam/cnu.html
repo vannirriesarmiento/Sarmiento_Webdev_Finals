@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=">
   <title>Final Exam Part 2 - Web Application for COVID-19</title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css" />
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
@@ -47,54 +47,51 @@
     <b style="font-size:62px; color:white;">CORONAVIRUS NEWS & UPDATES</b>
   </header>
 
-  <div class="container">
-    <ul class="nav nav-pills nav-fill d-flex justify-content-around">
+  <div class="menu">
+    <ul class="nav nav-fill d-flex justify-content-center">
       <li class="nav-item">
-        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+        <a class="nav-link text-dark" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+        <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
         <div class="dropdown-menu" style="width:100%; text-align:center;">
-          <a class="dropdown-item" href="#">Purpose of the Site</a>
-          <a class="dropdown-item" href="#">Background</a>
+          <a class="dropdown-item" id="pills-purpose-tab" data-toggle="pill" href="#pills-purpose" role="tab" aria-controls="pills-purpose" aria-selected="false">Purpose of the Site</a>
+          <a class="dropdown-item" id="pills-background-tab" data-toggle="pill" href="#pills-background" role="tab" aria-controls="pills-background" aria-selected="false">Background</a>
           <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">People Behind</a>
           <div class="dropdown-menu" style="width:100%; text-align:center;">
             <a class="dropdown-item" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact">Contact Us</a>
-            <a class="dropdown-item" id="pills-porfolio-tab" data-toggle="pill" href="#pills-porfolio" role="tab" aria-controls="pills-porfolio">My Portfolio</a>
+            <a class="dropdown-item" href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/sarmiento_portfolio.html">Portfolio</a>
           </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Coronavirus</a>
+        <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Coronavirus</a>
         <div class="dropdown-menu" style="width:100%; text-align:center;">
           <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Coronavirus Background</a>
           <div class="dropdown-menu" style="width:100%; text-align:center;">
-            <a class="dropdown-item" href="#">History</a>
-            <a class="dropdown-item" href="#">Symptoms</a>
-            <a class="dropdown-item" href="#">Prevention</a>
+            <a class="dropdown-item" id="pills-covidhisto-tab" data-toggle="pill" href="#pills-covidhisto" role="tab" aria-controls="pills-covidhisto" aria-selected="false">History</a>
+            <a class="dropdown-item" id="pills-symptoms-tab" data-toggle="pill" href="#pills-symptoms" role="tab" aria-controls="pills-symptoms" aria-selected="false">Symptoms</a>
+            <a class="dropdown-item" id="pills-prevention-tab" data-toggle="pill" href="#pills-prevention" role="tab" aria-controls="pills-prevention" aria-selected="false">Prevention</a>
           </div>
-          <a class="dropdown-item" href="#">News</a>
-          <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Virus Maps & Cases</a>
-          <div class="dropdown-menu" style="width:100%; text-align:center;">
-            <a class="dropdown-item" href="#">Updates</a>
-            <a class="dropdown-item" href="#">Situational Reports</a>
-          </div>
-          <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Articles</a>
+          <a class="dropdown-item" id="pills-news-tab" data-toggle="pill" href="#pills-news" role="tab" aria-controls="pills-news" aria-selected="false">News</a>
+          <a class="dropdown-item" id="pills-virusmap-tab" data-toggle="pill" href="#pills-virusmap" role="tab" aria-controls="pills-virusmap" aria-selected="false">Virus Maps</a>
+          <a class="dropdown-item" id="pills-articles-tab" data-toggle="pill" href="#pills-articles" role="tab" aria-controls="pills-articles" aria-selected="false">Articles</a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+        <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
         <div class="dropdown-menu" style="width:100%; text-align:center;">
-          <a class="dropdown-item" href="#">Donations</a>
+          <a class="dropdown-item" id="pills-donations-tab" data-toggle="pill" href="#pills-donations" role="tab" aria-controls="pills-donations" aria-selected="false">Donations</a>
           <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Forums</a>
           <div class="dropdown-menu" style="width:100%; text-align:center;">
-            <a class="dropdown-item" href="#">Dashboard</a>
-            <a class="dropdown-item" href="#">Send Qs</a>
-            <a class="dropdown-item" href="#">FAQs</a>
+            <a class="dropdown-item" id="pills-dashboard-tab" data-toggle="pill" href="#pills-dashboard" role="tab" aria-controls="pills-dashboard" aria-selected="false">Dashboard</a>
+            <a class="dropdown-item" id="pills-qs-tab" data-toggle="pill" href="#pills-qs" role="tab" aria-controls="pills-qs" aria-selected="false">Send Qs</a>
           </div>
         </div>
       </li>
     </ul>
+  </div>
 
+  <div class="container-fluid">
     <div class="tab-content" id="pills-tabContent">
 
       <!-- homepage -->
@@ -105,7 +102,7 @@
           <center>
             <div class="card-columns">
 
-              <div class="card bg-primary text-white text-center p-3">
+              <div class="card bg-dark text-white text-center p-3">
                 <h5 class="card-header">Coronavirus Symptoms</h5>
                 <div class="card-body">
                   <blockquote class="blockquote mb-0">
@@ -125,11 +122,11 @@
                           <li>conjunctivitis</li>
                           <li>headache</li>
                           <li>loss of taste or smell</li>
-                        </ul><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms" target="_blank" style="color:red;">Read More</a>
-                        <p>From World Health Oorganization News Report</p>
+                        </ul><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms" target="_blank">Read More</a>
+                        <p>From World Health Organization News Report</p>
                     </small>
                   </blockquote>
-                  <div class="card-footer text-muted">17 April 2020</div>
+                  <div class="card-footer">17 April 2020</div>
                 </div>
               </div>
 
@@ -137,7 +134,7 @@
                 <div class="card-body">
                   <h5 class="card-title">What you need to know</h5>
                   <p class="card-text">
-                    <ul>
+                    <ul class="text-left">
                       <li>The world has recorded its highest number of daily Covid-19 cases since the pandemic began, fueled by a second wave in Europe.</li>
                       <li>President Trump has been cleared by his doctor to resume public engagements, but there are still unanswered questions about his health.</li>
                       <li>The World Food Programme won the 2020 Nobel Peace Prize as the world grapples with a pandemic-induced food crisis.</li>
@@ -172,32 +169,33 @@
                 <img class="card-img-top" src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/ae83d3fc-b0da-4408-a1c2-d8780e50ce0c.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Russia reports record daily increase in coronavirus cases since the beginning of the pandemic</h5>
-                  <p class="card-text text-justify">Russia reported 12,126 new cases of Covid-19 on Friday, the highest daily increase recorded since the beginning of the pandemic, according to the data from the country's coronavirus response headquarters.
-                    <blockquote>"Over the past 24 hours there have been 12,126 confirmed cases of new coronavirus infection Covid-19 in 85 regions, including 3,272 (27%) active cases without clinical manifestations,” the statement from health officials said.</blockquote>
-                    In total, Russia has reported 1,272,238 coronavirus cases as of October 9.
-
-                    Russia’s deputy prime minister Tatyana Golikova has previously said that May 11 was the peak of the pandemic, with 11,656 officially reported cases on that day.
-                  </p>
+                  <p class="card-text text-justify">Russia reported 12,126 new cases of Covid-19 on Friday, the highest daily increase recorded since the beginning of the pandemic, according to the data from the country's coronavirus response headquarters.</p>
+                  <blockquote class="cite">"Over the past 24 hours there have been 12,126 confirmed cases of new coronavirus infection Covid-19 in 85 regions, including 3,272 (27%) active cases without clinical manifestations,” the statement from health officials said.</blockquote>
+                  <p class="card-text text-justify">In total, Russia has reported 1,272,238 coronavirus cases as of October 9.Russia’s deputy prime minister Tatyana Golikova has previously said that May 11 was the peak of the pandemic, with 11,656 officially reported cases on that day.</p>
                   <p class="card-text"><small class="text-muted">From CNN’s Mary Ilyushina in Moscow</small></p>
                   <div class="card-footer text-muted">10 Oct 2020</div>
                 </div>
               </div>
 
-              <blockquote class="card twitter-tweet">
-                <p lang="en" dir="ltr">The seven-day average for daily coronavirus cases grew by more than 5% in 38 states yesterday. 9 states hit record-high average hospitalizations yesterday.</p>&mdash; Dawn Kopecki (@Dawn_Kopecki) <a href="https://twitter.com/Dawn_Kopecki/status/1314551909936660481?ref_src=twsrc%5Etfw">October 9, 2020</a>
-              </blockquote>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <div class="card bg-primary">
+                <center>
+                  <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">After a first negative <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> test on Monday, my second one is positive. I have been in self-isolation since Monday and continue staying at home, following the established regulations. Keep yourself healthy and stay safe!</p>&mdash; Mariya Gabriel (@GabrielMariya) <a href="https://twitter.com/GabrielMariya/status/1314890374788378632?ref_src=twsrc%5Etfw">October 10, 2020</a>
+                </center>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
 
               <div class="card">
-                <blockquote class="blockquote mb-0">
-                  <video width="100%" controls>
-                    <source src="https://youtu.be/Sg6eO1ab0Xk" type="video/mp4">Your browser does not support the video tag.
-                  </video>
-                  <div class="card-body">
-                    <h5 class="card-title">New COVID-19 cases around the world (as of Oct. 8, 2020)</h5>
-                    <small class="text-muted">From GMA News Online</small>
-                    <div class="card-footer text-muted">9 Oct 2020</div>
-                  </div>
+                <video width="100%" controls>
+                  <source src="https://youtu.be/Sg6eO1ab0Xk" type="video/mp4">Your browser does not support the video tag.
+                </video>
+                <div class="card-body">
+                  <h5 class="card-title">New COVID-19 cases around the world (as of Oct. 8, 2020)</h5>
+                  <p class="card-text"><small class="text-muted text-center">From GMA News Online</small></p>
+                  <div class="card-footer text-muted text-center">9 Oct 2020</div>
+                  </p>
+                </div>
               </div>
 
               <div class="card">
@@ -212,10 +210,14 @@
                 </div>
               </div>
 
-              <blockquote class="twitter-tweet card">
-                <p lang="en" dir="ltr">NEW: Coronavirus infections in England are rising by an estimated 17,200 a day, up 105% from last week or 437% from last month - ONS</p>&mdash; BNO Newsroom (@BNODesk) <a href="https://twitter.com/BNODesk/status/1314541470838292480?ref_src=twsrc%5Etfw">October 9, 2020</a>
-              </blockquote>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <div class="card bg-primary">
+                <center>
+                  <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">NEW: Coronavirus infections in England are rising by an estimated 17,200 a day, up 105% from last week or 437% from last month - ONS</p>&mdash; BNO Newsroom (@BNODesk) <a href="https://twitter.com/BNODesk/status/1314541470838292480?ref_src=twsrc%5Etfw">October 9, 2020</a>
+                </center>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
 
               <div class="card">
                 <img class="card-img-top" src="https://sa.kapamilya.com/absnews/abscbnnews/media/2020/news/10/09/20200806-covid19-vaccine-gamaleya-afp.jpg">
@@ -228,102 +230,22 @@
                   <div class="card-footer text-muted">9 Oct 2020</div>
                 </div>
               </div>
-
             </div>
           </center>
         </div>
-      </div>
-
-      <!-- porfolio -->
-
-      <div class="tab-pane fade" id="pills-porfolio" role="tabpanel" aria-labelledby="pills-porfolio-tab">
-        <div class="container-fluid">
-          <center>
-            <h1><span id="bubble">Vannirrie Sarmiento</span></h1>
-            <p>Allow me to introduce myself! I am a designer and a student-in-training. I am a 19 years old, female, IT student at University of Immaculate Conception. I like designing web pages and contributing to the creativity. I am still a novice to the ways of web developmen but here, you will see the collection of my projects throughout my Web Development class. I hope you enjoy your stay!</p>
-            <hr>
-
-            <div class="content">
-              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/tribute.png" class="img">
-              <div class="overlay">
-                <div class="overlaytext">
-                  <b>Tribute Page</b><br>
-                  <blockquote>This is one of my latest piece. It is to commemorate my idol, Zendaya. I started with a simple HTML code that complements the achievements and beauty of the person I admire. My vision was to use light and neutral colors, such as linen, peach, white, and black. I used CSS to implement those.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/act47/tribute.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="content">
-              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/invoice.png" class="img">
-              <div class="overlay">
-                <div class="overlaytext">
-                  <b>Invoice / Receipt Page</b><br>
-                  <blockquote>We were tasked to find a receipt online and imitate its attributes but make it as a functional website. Webpage #1 is all about the web view of the receipt only. While, Webpage #2 contains the HTML forms. I only used input types that are only applicable, like textfield, numberfield, and a date input.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2a/receipt_web_view.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE #1</a>&nbsp;<a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2a/receipt_input_form.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE #2</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="content">
-              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/google.png" class="img">
-              <div class="overlay">
-                <div class="overlaytext">
-                  <b>Copy of Google Main Page</b><br>
-                  <blockquote>The creation of this webpage was all about my ability to copy Google's web design in my own little ways. In order to achieve this output, I keenly observed Google. I made sure I had atleast the right shades of the colors used. It was very time consuming but it was good practice to sharpen my skills.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/act46/google.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="content">
-              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/vmg.png" class="img">
-              <div class="overlay">
-                <div class="overlaytext">
-                  <b>UIC Vison, Mision, & Goals</b><br>
-                  <blockquote>When I created this, my classmates & I were still learning about the fundamentals of web development. Thus, the site will be basic & simple. We were tasked to attach a video & audio of ourselves reciting to UIC's VMG. I used basic HTML to attach the medias to the site. </blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/vmg.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="content">
-              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/testingcss.png" class="img">
-              <div class="overlay">
-                <div class="overlaytext">
-                  <b>Testing CSS Page</b><br>
-                  <blockquote>Disclaimer, the contents and design is not originally visualized and created by me. However, I followed certain steps & procedures to arrive in this web page. It helped me learn discipline and protocols, thus making me a better web developer. So, I showcase it here despite having no claim.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/act45/testingcss.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="content">
-              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/masterdetail.png" class="img">
-              <div class="overlay">
-                <div class="overlaytext">
-                  <b>Masterdetail Page</b><br>
-                  <blockquote>This webpage was the hardest one for me, because each page consists of the past activities we've already made. It was stored in a masterdetail platform. It was very time consuming. Still, I managed to apply CSS styling codes to make it more appealing. Nonetheless, it helped me with my understanding.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/masterdetail.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="content">
-              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/calendar.png" class="img">
-              <div class="overlay">
-                <div class="overlaytext">
-                  <b>Birth Month Page</b><br>
-                  <blockquote>This webpage was one of the first tasks my class was assigned to do. This is just a simple calendar of my birth month. I just added a repeating background and added complimentary colors, such as the hues of nature. It compliments the theme of the month of May.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/calendarwithcss.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="content">
-              <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/exam/part2b/images/markup.png" class="img">
-              <div class="overlay">
-                <div class="overlaytext">
-                  <b>Markup Page</b><br>
-                  <blockquote>This webpage was another one of the first tasks my class was assigned to do. It is just a basic layout of a poem with markins on it. I used the em and strong tag to emphasize the lines that needs bold and italicized markings on it to create a more indepth feeling of the poem. This thought me the use of tags.</blockquote><a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Midterm/markup.html" target="_blank" class="btn btn-primary">VIEW WEBPAGE</a>
-                </div>
-              </div>
-            </div>
-          </center>
-        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center pagination-lg">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <!-- contact page -->
@@ -331,7 +253,7 @@
       <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
         <div class="container-fluid">
           <center>
-            <h1>Contact Us</h1></br>
+            <h1>Contact Us</h1><br>
             <table class="contactpage">
               <tr>
                 <td><input type="text" id="myInput" class="form-control form-control-lg" placeholder="Enter your name"></td>
@@ -356,6 +278,403 @@
           </center>
         </div>
       </div>
+
+      <!-- contact page -->
+
+      <div class="tab-pane fade" id="pills-qs" role="tabpanel" aria-labelledby="pills-qs-tab">
+        <div class="container-fluid">
+          <center>
+            <h1>Send us your questions!</h1><br>
+            <table>
+              <tr>
+                <td><input type="text" id="myInput" class="form-control form-control-lg" placeholder="Name (Optional)"></td>
+                <td><input type="text" id="myInput" class="form-control form-control-lg" placeholder="Email Address" required></td>
+              </tr>
+              <tr>
+                <td colspan="2"><textarea class="form-control form-control-lg" id="myInput" id="exampleFormControlTextarea1" placeholder="Enter your message here" rows="6" required></textarea></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="text" id="myInput" class="form-control form-control-lg" placeholder="Enter your email address" required></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td align="right"><button type="button" class="btn btn-primary btn-lg">Submit</button></td>
+              </tr>
+            </table>
+          </center>
+        </div>
+      </div>
+
+      <!-- dashboard -->
+      <div class="tab-pane fade" id="pills-dashboard" role="tabpanel" aria-labelledby="pills-dashboard-tab">
+        <div class="container-fluid">
+          <div class="container">
+            <center><i class="fas fa-question-circle fa-3x"></i><br></br>
+              <div class="form-group mx-sm-3 mb-2">
+                <input type="text" class="form-control form-control-lg" id="inputPassword2" placeholder="Use keywords">
+                </form>
+              </div></br>
+              <button href="#" class="btn btn-secondary">Treatment & Prevention</button>&nbsp;<button href="#" class="btn btn-secondary">Transportation</button>&nbsp;<button href="#" class="btn btn-secondary">Family</button><br></br><button href="#" class="btn btn-secondary">Work Life</button>&nbsp;<button href="#" class="btn btn-secondary">Schools or Education</button>&nbsp;<button href="#" class="btn btn-secondary">Myths & Misinformation</button>
+          </div><br>
+          <img src="https://github.com/vannirriesarmiento/Sarmiento_Webdev_Finals/blob/main/exam/assets/dashboard.png?raw=true" width="100%">
+          </center>
+        </div>
+      </div>
+
+      <!-- symptoms -->
+      <div class="tab-pane fade" id="pills-symptoms" role="tabpanel" aria-labelledby="pills-symptoms-tab">
+        <div class="container-fluid">
+          <center>
+            <h1>Coronavirus Symptoms</h1><br></br>
+            <p class="text-justify">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.<br></br>Here are illustrations of the common symptoms.</p>
+            <a href='https://www.healthdirect.gov.au/coronavirus-covid-19-in-pictures'><img src='http://media.healthdirect.org.au/images/inline/original/covid-cold-flu-symptoms-bd24a5.png' alt='COVID-19 coronavirus - understand the symptoms' width='100%' border='0' /></a>
+            <p class="text-justify">Look for emergency warning signs* for COVID-19. If someone is showing any of these signs, seek emergency medical care immediately:</p>
+            <ul class="text-justify">
+              <li>Trouble breathing</li>
+              <li>Persistent pain or pressure in the chest</li>
+              <li>New confusion</li>
+              <li>Inability to wake or stay awake</li>
+              <li>Bluish lips or face</li>
+            </ul>
+            <p class="text-justify">*This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>Call 911 or call ahead to your local emergency facility: Notify the operator that you are seeking care for someone who has or may have COVID-19.</p><br>
+            <p>Infographic courtesy of <a href="https://www.healthdirect.gov.au" target="_blank">healthdirect</a>.</p></br>
+            <small>September 2020 | From Health Direct</small>
+          </center><br></br>
+        </div>
+      </div>
+
+      <!-- prevention -->
+      <div class="tab-pane fade" id="pills-prevention" role="tabpanel" aria-labelledby="pills-prevention-tab">
+        <div class="container-fluid">
+
+          <center>
+            <h1>Coronavirus Prevention</h1><br></br>
+
+            <a href='https://www.healthdirect.gov.au/coronavirus-covid-19-in-pictures'><img src='http://media.healthdirect.org.au/images/inline/original/avoiding-covid-19-update-e44657.png' alt='COVID-19 coronavirus - how to avoid infection' width='100%' border='0' /></a>
+            <a href='https://www.healthdirect.gov.au/coronavirus-covid-19-in-pictures'><img src='http://media.healthdirect.org.au/images/inline/original/covid-linkedin-washing-hands-tile_1200x628px-0f05e7.png' alt='COVID-19 coronavirus - how to wash your hands' width='100%' border='0' /></a>
+            <a href='https://www.healthdirect.gov.au/coronavirus-covid-19-in-pictures'><img src='https://media.stg.healthdirect.org.au/images/inline/original/sanitiser-safety-2dee9e.png' alt='COVID-19 coronavirus - how to wash your hands' width='100%' border='0' /></a>
+            <p><a href='https://www.healthdirect.gov.au/coronavirus-covid-19-in-pictures'><img src='http://media.healthdirect.org.au/images/inline/original/covid-mental-health-01e0be.png' alt='Taking care of your mental health during COVID-19' width='100%' border='0' /></a>
+              <p>Infographic courtesy of <a href="https://www.healthdirect.gov.au" target="_blank">healthdirect</a>.</p></br>
+              <small>September 2020 | From Health Direct</small>
+          </center>
+        </div>
+      </div>
+
+      <!-- purpose of the site -->
+
+      <div class="tab-pane fade" id="pills-purpose" role="tabpanel" aria-labelledby="pills-purpose-tab">
+        <div class="container-fluid">
+          <center>
+            <h1> Our Purpose </h1><br>
+            <p class="card-text text-justify">Coronavirus News & Updates is a large web portal, organized as a multi-level integration of various resources and services, which are updated in real-time. We offer also you updates for every members that signed up on our membership page. Click <a href="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Finals/exam/membership-registration.html">here</a> to be a member!<br></br>
+
+              Coronavirus News & Updates contains an enormous amount of unique content. Sites of this type have a complex structure and navigation and contain various interactive services. Informational websites are designed for a large number of visitors.<br></br>
+
+              The main purpose of the informational website is to help users to find the necessary information on a specific topic. Due to the special website functions, all the data available on the website is easy to structure and systematize, which makes working with it as efficient and convenient as possible. In this case, the informational website acts as a user’s guide on the Web, which, compared to search engines, greatly simplifies the search for thematic materials.</p></br>
+            <img src="https://i.imgur.com/ZtdhrUA.jpg" alt="custom_html_banner1" style="width:100%">
+          </center>
+        </div>
+      </div>
+
+      <!-- background -->
+
+      <div class="tab-pane fade" id="pills-background" role="tabpanel" aria-labelledby="pills-background-tab">
+        <div class="container-fluid">
+          <center>
+            <h1>Our Background</h1><br>
+            <table>
+              <tr>
+                <td align="center">
+                  <h2 class="text-danger">2018</h2></br>
+                  This was before COVID, however Vannirrie Sarmiento, the team leader, already had a vision of creating an educational website that could serve the people in a digital platform. However, there was still no main target as to what would the website's content would be about.<br></br>This era was all about birth of CNU's implementation. Sarmiento opted to create a website that is helpful to the community especially in times of crisis.
+                </td>
+                <td align="center">
+                  <h2 class="text-danger">2019</h2></br>The start of COVID-19 in Wuhan, China was broadcasted all over the world. Sarmiento gathered herself a team of aspiring and thriving web developers to sought education and implement change in the global disease.<br></br>Vannirrie Sarmiento and her team, Kristine Sarmiento, Mae Sarmiento, and Aichi Ijan prompted for the establishment of CNU and started to plan for the educational website.
+                </td>
+                <td align="center">
+                  <h2 class="text-danger">2020</h2>The website is officially established and on going by the team. Today, we would like to offer you our services and be of help to everyone worldwide. <br></br>We intented to have a global scope in order to address each and everyone dealing with the pandemic. This website is just starting but it passionately loves to serve, educate, and bring about change to people.
+                </td>
+              </tr>
+            </table><br></br>
+            <img src="https://wpadvancedads.com/wp-content/uploads/2015/08/728x90.png" alt="custom_html_banner1" style="width:100%">
+        </div>
+      </div>
+
+      <!-- covid history -->
+
+      <div class="tab-pane fade" id="pills-covidhisto" role="tabpanel" aria-labelledby="pills-covidhisto-tab">
+        <div class="container-fluid">
+          <center>
+            <h1>Coronavirus History</h1><br>
+            <p class="text-justify">
+              <b>31 Dec 2019.</b> Wuhan Municipal Health Commission, China, reported a cluster of cases of pneumonia in Wuhan, Hubei Province. A novel coronavirus was eventually identified.<br><br>
+
+              <b>1 January 2020.</b> WHO had set up the IMST (Incident Management Support Team) across the three levels of the organization: headquarters, regional headquarters and country level, putting the organization on an emergency footing for dealing with the outbreak.<br></br>
+
+              <b>4 January 2020.</b> WHO reported on social media that there was a cluster of pneumonia cases – with no deaths – in Wuhan, Hubei province.<br></br>
+
+              <b>5 January 2020.</b> WHO published our first Disease Outbreak News on the new virus. This is a flagship technical publication to the scientific and public health community as well as global media. It contained a risk assessment and advice, and reported on what China had told the organization about the status of patients and the public health response on the cluster of pneumonia cases in Wuhan.<br></br>
+
+              <b>10 January 2020.</b> WHO issued a comprehensive package of technical guidance online with advice to all countries on how to detect, test and manage potential cases, based on what was known about the virus at the time. This guidance was shared with WHO's regional emergency directors to share with WHO representatives in countries.<br></br>Based on experience with SARS and MERS and known modes of transmission of respiratory viruses, infection and prevention control guidance were published to protect health workers recommending droplet and contact precautions when caring for patients, and airborne precautions for aerosol generating procedures conducted by health workers.<br></br>
+
+              <b>12 January 2020.</b> China publicly shared the genetic sequence of COVID-19.<br></br>
+
+              <b>13 January 2020.</b> Officials confirm a case of COVID-19 in Thailand, the first recorded case outside of China.<br></br>
+
+              <b>14 January 2020.</b> WHO's technical lead for the response noted in a press briefing there may have been limited human-to-human transmission of the coronavirus (in the 41 confirmed cases), mainly through family members, and that there was a risk of a possible wider outbreak. The lead also said that human-to-human transmission would not be surprising given our experience with SARS, MERS and other respiratory pathogens.<br></br>
+
+              <b>20-21 January 2020.</b> WHO experts from its China and Western Pacific regional offices conducted a brief field visit to Wuhan.<br></br>
+
+              <b>22 January 2020.</b> WHO mission to China issued a statement saying that there was evidence of human-to-human transmission in Wuhan but more investigation was needed to understand the full extent of transmission.<br></br>
+
+              <b>22- 23 January 2020.</b> The WHO Director- General convened an Emergency Committee (EC) under the International Health Regulations (IHR 2005) to assess whether the outbreak constituted a public health emergency of international concern. The independent members from around the world could not reach a consensus based on the evidence available at the time. They asked to be reconvened within 10 days after receiving more information.<br></br>
+
+              <b>28 January 2020.</b> A senior WHO delegation led by the Director-General travelled to Beijing to meet China’s leadership, learn more about China’s response, and to offer any technical assistance.<br></br>While in Beijing, Dr. Tedros agreed with Chinese government leaders that an international team of leading scientists would travel to China on a mission to better understand the context, the overall response, and exchange information and experience.<br></br>
+
+              <b>30 January 2020.</b> The WHO Director-General reconvened the Emergency Committee (EC). This was earlier than the 10-day period and only two days after the first reports of limited human-to-human transmission were reported outside China. This time, the EC reached consensus and advised the Director-General that the outbreak constituted a Public Health Emergency of International Concern (PHEIC). The Director-General accepted the recommendation and declared the novel coronavirus outbreak (2019-nCoV) a PHEIC. This is the 6th time WHO has declared a PHEIC since the International Health Regulations (IHR) came into force in 2005.<br></br>WHO’s situation report for 30 January reported 7818 total confirmed cases worldwide, with the majority of these in China, and 82 cases reported in 18 countries outside China. WHO gave a risk assessment of very high for China, and high at the global level.<br></br>
+
+              <b>3 February 2020.</b> WHO releases the international community's Strategic Preparedness and Response Plan to help protect states with weaker health systems.
+              <br></br>
+
+              <b>11-12 February 2020.</b> WHO convened a Research and Innovation Forum on COVID-19, attended by more than 400 experts and funders from around the world, which included presentations by George Gao, Director General of China CDC, and Zunyou Wu, China CDC's chief epidemiologist.<br></br>
+
+              <b>16-24 February 2020.</b> The WHO-China Joint mission, which included experts from Canada, Germany, Japan, Nigeria, Republic of Korea, Russia, Singapore and the US (CDC, NIH) spent time in Beijing and also travelled to Wuhan and two other cities. They spoke with health officials, scientists and health workers in health facilities (maintaining physical distancing). The report of the joint mission can be found here: <a href="https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf">https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf</a><br></br>
+
+              <b>11 March 2020.</b> Deeply concerned both by the alarming levels of spread and severity, and by the alarming levels of inaction, WHO made the assessment that COVID-19 can be characterized as a pandemic.<br></br>
+
+              <b>13 March 2020.</b> COVID-19 Solidarity Response Fund launched to receive donations from private individuals, corporations and institutions.<br></br>
+
+              <b>18 March 2020.</b> WHO and partners launch the Solidarity Trial, an international clinical trial that aims to generate robust data from around the world to find the most effective treatments for COVID-19. </p></br>
+
+            <center>Click <a href="https://www.who.int/news-room/detail/29-06-2020-covidtimeline">here</a> to read full text.<br></br>
+              <small>29 June 2020 | From World Health Organization</small></center><br></br>
+        </div>
+      </div>
+
+      <!-- news -->
+
+      <div class="tab-pane fade" id="pills-news" role="tabpanel" aria-labelledby="pills-news-tab">
+        <div class="container-fluid">
+          <h1 class="text-left" style="border-bottom:1px solid black; padding:20px;">News</h1><br>
+          <center>
+
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                  </div>
+                  <label class="form-control text-left">Philippines</label>
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                  </div>
+                  <label class="form-control text-left">International</label>
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <input type="checkbox" aria-label="Checkbox for following text input" checked>
+                    </div>
+                  </div>
+                  <label class="form-control text-left">All</label>
+                </div>
+                <p class="text-left">Sort by</p>
+                <div class="dropdown">
+                  <button class="btn btn-outline-secondary dropdown-toggle btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Latest
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Latest</a>
+                    <a class="dropdown-item" href="#">Oldest</a>
+                    <a class="dropdown-item" href="#">Most Viewed</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+
+                <div class="card text-justify">
+                  <div class="card-body">
+                    <h5 class="card-title h1">Billboard with Covid-19 stats expected to circle the White House during Trump event</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">From CNN's Betsy Klein</h6>
+                    <p class="card-text"><br>As President Trump hosts supporters at the White House for his first public event since testing positive for coronavirus, the Democratic National Committee War Room is planning a spectacle of its own.<br></br>From 11 a.m. to 6 p.m., a mobile billboard is expected to roam the streets around the White House to call attention to the Trump administration’s coronavirus response, and how, per the DNC War Room, Trump is “still putting lives at risk.”<br></br>The billboard truck is expected to feature a screen with rotating pandemic statistics, including 7.7 million coronavirus cases in the US, 213,000 US deaths, 657,000 children infected, 400,000 businesses closed for good, and 40 million Americans at risk of being evicted by the end of the year.<br></br>And the truck will play audio of Dr. Anthony Fauci, who told CBS News Radio in an interview this week, “We had a superspreader event in the White House.”<br></br>“Even after the White House has been turned into a hotspot in this pandemic, Trump still hasn’t learned his lesson or started listening to his own public health experts,” DNC War Room spokesperson Lily Adams said in a statement. “Instead, he is doubling down with another potential superspreader event today and a return to rallies next week.”</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <br>
+                <div class="card text-justify">
+                  <div class="card-body">
+                    <h5 class="card-title h1">White House event today will be brief and comply with CDC guidelines, communications director says</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">From CNN's Jason Hoffman</h6>
+                    <img class="card-img-top" src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/782e9d30-dcc4-459d-8024-c1c379bbe569.jpg" alt="Card image cap">
+                    <small class="text-muted">Alyssa Farah, White House communications director, speaks with reporters on October 10 at the White House. Alex Brandon/AP</small>
+                    <p class="card-text"><br>White House communications director Alyssa Farah said that today’s event at the White House, the first public event for President Trump since his coronavirus diagnosis, will be brief and comply with guidelines from the Centers for Disease Control and Prevention.<br>
+                      <blockquote class="cite">“We’re making sure we’re taking precautions so that those in attendance are screened before they come in. The President’s at a great distance, he’s gonna be up on the balcony and very briefly address the supporters there,” Farah told reporters at the White House on Saturday.</blockquote><a href="https://edition.cnn.com/world/live-news/coronavirus-pandemic-10-10-20-intl/h_e471b11e4bb6fbf69aa97cd4d5044f88">Read More</a>
+                    </p>
+                    <p class="card-text"><small class="text-muted">1 hr 54 min ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center pagination-lg">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+
+      <!-- virusmap -->
+
+      <div class="tab-pane fade" id="pills-virusmap" role="tabpanel" aria-labelledby="pills-virusmap-tab">
+        <div class="container-fluid">
+          <center>
+            <h1>Virus Map</h1>
+            <small class="text-muted">By Henrik Pettersson, Byron Manley and Sergio Hernandez, CNN</br>Last updated: October 10, 2020 at 11:45 a.m. ET</small><br></br>
+            <p>Since December, the virus has spread to nearly every continent and case numbers continue to rise. <br></br>Authorities in 214 countries and territories have reported about 37 million Covid‑19 cases and 1.1 million deaths since China reported its first cases to the World Health Organization (WHO) in December</p>
+            <img src="https://github.com/vannirriesarmiento/Sarmiento_Webdev_Finals/blob/main/exam/assets/virusmap.png?raw=true" width="100%">
+        </div>
+      </div>
+
+      <!-- articles -->
+
+      <div class="tab-pane fade" id="pills-articles" role="tabpanel" aria-labelledby="pills-articles-tab">
+        <div class="container-fluid">
+          <h1 class="text-left" style="border-bottom:1px solid black; padding:20px;">Articles</h1><br>
+          <center>
+
+            <div class="row">
+              <div class="col-md-auto">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <input type="checkbox" aria-label="Checkbox for following text input" checked>
+                    </div>
+                  </div>
+                  <label class="form-control text-left">Philippines</label>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                  </div>
+                  <label class="form-control text-left">International</label>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                  </div>
+                  <label class="form-control text-left">All</label>
+                </div>
+              </div>
+              <div class="col-lg" align="right">
+                <div class="dropdown">
+                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Latest</a>
+                    <a class="dropdown-item" href="#">Oldest</a>
+                    <a class="dropdown-item" href="#">Most Viewed</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-10">
+
+                <div class="card text-justify">
+                  <div class="card-body">
+                    <h5 class="card-title h1">Pasig uses online tech to consult residents on 'open streets' proposal amid pandemic</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Written by Pia Ranada | Rappler Manila, Philippines</h6>
+                    <p class="card-text"><br><b>Platform Pol.Is, used by Taiwan Digital Minister Audrey Tang, is now being used to get Pasigueños' views on a plan to reserve streets for jogging, biking, outdoor dining, and shopping.</b><br></br>The Pasig City government is using a data science-driven online platform to consult residents, workers, and students in the city about its plan to establish "open streets" during the COVID-19 pandemic.<br></br>The platform, Pol.Is, the brainchild of Seattle-based developers, launched an online survey on Friday, October 9, during an "Online Assembly on Open Streets" organized by the Makati Business Club and the Konrad Adenauer Foundation.<br></br>Participants of the virtual gathering were the first to try out the innovative survey, which uses machine learning to sift through how respondents approved or disapproved of a variety of statements on open streets crafted by the Pasig government.<br></br>Questions range from general ones like, "Ang kalye ay hindi para sa mga tao (Streets are not for people)" to concrete proposals like "Okay lang na isara ang ibang kalye sa mga motorista (It's okay to close off some streets to motorists."<br></br>"We're really happy to partner here with Pol.Is and with Makati Business Club to get a better sense of people's attitudes, of people's belief about open streets and people's familiarity with the concept just so we can plan our projects better," said Pasig's chief transport planner Robert Anthony Siy III.<br></br>Pol.Is also allows respondents to make their own suggestions, which are also sent to other respondents for them to approve or disapprove. The platform's algorithm then groups the results to show where participants agree and disagree, which statements were the most divisive, and where consensus could be found.</p>
+                    <p class="card-text text-center"><small class="text-muted">OCT 10, 2020</small></p>
+                  </div>
+                </div>
+                <br>
+                <div class="card text-justify">
+                  <div class="card-body">
+                    <h5 class="card-title h1">Asia Today: Philippines placing southern city in lockdown</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Written by AP News</h6>
+                    <img class="card-img-top" src="https://storage.googleapis.com/afs-prod/media/58d753e686864660bb0ca6f39285d592/800.jpeg" alt="Card image cap">
+                    <small class="text-muted">Alyssa Farah, White House communications director, speaks with reporters on October 10 at the White House. Alex Brandon/AP</small>
+                    <p class="card-text"><br>MANILA, Philippines (AP) — One southern Philippine province and its war-battered capital will be placed under a mild lockdown starting Thursday and the rest of the country will be under more relaxed restrictions to boost the battered economy of the country counting the most coronavirus infections in Southeast Asia.<br>
+                      President Rodrigo Duterte announced the quarantine restrictions for October in televised remarks Monday night. Lanao del Sur province and its capital, Marawi city, will fall under a lockdown starting Thursday due to infection spikes in recent weeks.<a href="https://apnews.com/article/virus-outbreak-travel-travel-south-korea-asia-c950c57e923576a91c38559edaf3b33c">Read More</a>
+                    </p>
+                    <p class="card-text text-center"><small class="text-muted">September 29, 2020
+                      </small></p>
+                  </div>
+                </div><br></br>
+              </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center pagination-lg">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+      </div>
+
+      <!-- donations -->
+
+      <div class="tab-pane fade" id="pills-donations" role="tabpanel" aria-labelledby="pills-donations-tab">
+        <div class="container-fluid">
+          <center>
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="https://image.cnbcfm.com/api/v1/image/106490965-1587013383709gettyimages-1210084746.jpeg?v=1587013411&w=678&h=381" alt="Card image">
+              <div class="card-img-overlay d-flex align-items-center">
+                <h1 class="card-title display-1">Help our Frontliners & COVID-19 Victims!</h1><br>
+              </div>
+            </div><br>
+            <h1>CORONAVIRUS (COVID-19) RESPONSE & RECOVERY</h1>
+            <small class="text-muted">via The UN Refugee Agency Philippines (UNHCR)</small>
+            <p class="text-justify" style="font-size:26px; margin:40px;">
+              COVID-19 places 79.5 million forcibly displaced individuals around the world at heightened risk. Within our own borders, the 278,816 who are currently displaced across Mindanao due to conflict and natural disasters are now at their most vulnerable.
+              <br></br>In transitory sites, access to basic services is scarce and they lack health, water and sanitation facilities. They need our urgent help today, and we can't do it without your support.
+              <br></br>Your help is critical as we move from rapid response to sustainable recovery, so we can ensure that more forcibly displaced families in Mindanao are protected from COVID-19, and better prepared and equipped to withstand future emergencies. Together, we can deliver sustainable and vital services including, health, water and sanitation, and many other essential relief projects.</p><br>
+            <center><img alt="" src="https://www.unhcr.org/ph/wp-content/uploads/sites/28/2019/09/UNHCRUNRefugeeAgencypadlock3.png" style="width: 27.4375px;"><br>Your donation is 100% secure.
+              <br></br><button type="button" class="btn btn-primary btn-lg" href="https://donate.unhcr.ph/ODP/Donate/DonateNow/b7ac08ed-44ac-44cb-a08a-843561b4d4c8?gclid=Cj0KCQjwt4X8BRCPARIsABmcnOonC8eZ28rkhRXWoULIljvcGaVuI79LF8zoAqjFNB7yGs99XNYPgxsaAtSoEALw_wcB" target="_blank">Donate Now!</button>
+            </center></br>
+        </div>
+      </div>
+
+      <br>
     </div>
+  </div>
+
+  <footer>
+    <img src="https://vannirriesarmiento.github.io/Sarmiento_Webdev_Finals/exam/assets/cnu.png" class="logo">
+    <h3 class="text-white">Philippines</h3>
+    <p class="footerlinks"><a href="#" class="text-white">Privacy Policy</a>&nbsp;&nbsp;<a href="#" class="text-white">Terms of Use</a>&nbsp;&nbsp;<a href="#" class="text-white">Contact Us</a></p>
+    <br><small class="text-justify text-white">© 2020 Coronavirus News & Updates Journalism., Inc. All Rights Reserved<br>CNU Sans TM CNU Copyrighted</small>
+  </footer>
+
 </body>
+
 </html>
