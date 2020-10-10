@@ -2,6 +2,10 @@ body{
   font-family: 'Arial';
 }
 
+*{
+  font-size:20px;
+}
+
 a{
   text-decoration: none;
 }
@@ -20,6 +24,15 @@ header{
   position: absolute;
 }
 
+footer{
+  margin-bottom: 0px;
+  background: black;
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  padding: 30px;
+}
+
 blockquote {
   line-height: 2em;
   text-align: justify;
@@ -28,50 +41,12 @@ blockquote {
 }
 
 .container{
+  width: 80%;
   margin-top: 30px;
 } 
 
 .container-fluid{
-  margin-top: 7%;
-}
-
-.img {
-  width: 100%;
-  height: 280px;
-}
-
-.content{
-  position: relative;
-  width: 48%;
-  margin: 10px;
-  padding: 15px;
-  float: left;
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 10px;
-  box-shadow: 0px 0px 5px #ddd;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #fff;
-  opacity:0;
-  transition: 2s;
-}
-
-.content:hover .overlay {
-  opacity: 1;
-}
-
-.overlaytext {
-  color: #000;
-  position: absolute;
-  margin: 5px;
-  padding: 10px;
+  margin-top: 2%;
 }
 
 .contactpage tr, th, td{
@@ -80,4 +55,29 @@ blockquote {
 
 .contactpage{
   width: 70%;
+}
+
+.cite{
+  text-align: justify;
+  border-left: 5px solid #777;
+  padding-left: 10px;
+}
+
+.logo{
+  width: 125px;
+  float: left;
+  padding-right: 20px;
+}
+
+.footerlinks{
+  border-top: 1px solid #fff;
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-left: 120px;
+}
+
+.menu{
+  width: 100%;
+  padding: 10px;
+  background: #BDBDBD;
 }
